@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+>
+
+    <data>
+        <variable
+                name="title"
+                type="String"/>
+    </data>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_marginTop="@dimen/dpDimen30"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+    >
+        <LinearLayout
+                      android:layout_width="match_parent" android:orientation="vertical"
+                      android:layout_height="match_parent">
+
+
+       <!--     <include
+                    app:string="@{title}"
+                    android:id="@+id/sortnormal"
+                    layout="@layout/sorttitle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+            />-->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+            <!--    &lt;!&ndash;左边的一级列表&ndash;&gt;
+                <android.support.v7.widget.RecyclerView
+                        android:layout_marginTop="@dimen/dpDimen15"
+                        android:id="@+id/recyclerview_category"
+                        android:layout_width="@dimen/dpDimen84"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                >
+                </android.support.v7.widget.RecyclerView>-->
+                <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/smart_refreshLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srlEnableOverScrollBounce="true"
+                    app:srlEnableOverScrollDrag="true"
+                    app:srlReboundDuration="1000">
+                    <!--苹果水滴的样式-->
+                    <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerview_wares"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                    </androidx.recyclerview.widget.RecyclerView>
+                </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>
