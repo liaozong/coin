@@ -17,7 +17,7 @@
             android:layout_height="@dimen/dpDimen45"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/dpDimen35"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -291,7 +291,7 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@mipmap/register_word" />
+            android:src="@mipmap/register_word" />
 
         <ImageView
             android:id="@+id/imageView2"

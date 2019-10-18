@@ -10,14 +10,13 @@
         android:background="@color/allbackground"
         android:transitionName="login">
 
-
         <RelativeLayout
             android:id="@+id/close"
             android:layout_width="@dimen/dpDimen45"
             android:layout_height="@dimen/dpDimen45"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/dpDimen35"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -174,7 +173,7 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@mipmap/login_word" />
+            android:src="@mipmap/login_word" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -194,13 +193,6 @@
             app:layout_constraintEnd_toEndOf="@+id/et_password"
             app:layout_constraintTop_toTopOf="@+id/et_password"
             app:srcCompat="@mipmap/visiable_word" />
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="@dimen/dpDimen16"
-            android:layout_height="@dimen/dpDimen16"
-            app:layout_constraintBottom_toTopOf="@+id/view4"
-            app:layout_constraintEnd_toEndOf="@+id/et_safe_password"
-            app:layout_constraintTop_toTopOf="@+id/et_safe_password"
-            app:srcCompat="@mipmap/novisiable_word" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

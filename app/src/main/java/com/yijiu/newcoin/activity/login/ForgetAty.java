@@ -19,6 +19,7 @@ import com.yijiu.newcoin.net.request.LoginRequest;
 import com.yijiu.newcoin.utils.PreferenceUtil;
 import com.yijiu.newcoin.utils.UIUtils;
 import com.yijiu.newcoin.utils.Utils;
+import com.yijiu.newcoin.utils.ui.BarUtils;
 
 import org.greenrobot.eventbus.EventBus;
 
@@ -37,6 +38,8 @@ public class ForgetAty extends BaseAty {
     public void init() {
         super.init();
         UIUtils.setWindowTitleWordColor(this);
+        BarUtils.setStatusBarColor(this,getResources().getColor(R.color.bg_color));
+        BarUtils.setStatusBarLightMode(this,false);
     }
 
     @Override

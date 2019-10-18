@@ -16,6 +16,7 @@ import com.yijiu.newcoin.factory.FragmentFactory;
 import com.yijiu.newcoin.msg.EventMsg;
 import com.yijiu.newcoin.msg.NetEvent;
 import com.yijiu.newcoin.utils.UIUtils;
+import com.yijiu.newcoin.utils.ui.BarUtils;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -31,6 +32,8 @@ public class MainActivity extends BaseAty {
     @Override
     protected void initView() {
         super.initView();
+        BarUtils.setStatusBarColor(this,getResources().getColor(R.color.bg_color));
+        BarUtils.setStatusBarLightMode(this,false);
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
     }
 

@@ -6,11 +6,13 @@ import androidx.databinding.DataBindingUtil;
 
 import com.yijiu.newcoin.MainActivity;
 import com.yijiu.newcoin.R;
+import com.yijiu.newcoin.activity.login.LoginAty;
 import com.yijiu.newcoin.base.BaseAty;
 import com.yijiu.newcoin.base.Constant;
 import com.yijiu.newcoin.databinding.ActivityStartBinding;
 import com.yijiu.newcoin.utils.PreferenceUtil;
 import com.yijiu.newcoin.utils.UIUtils;
+import com.yijiu.newcoin.utils.ui.BarUtils;
 
 
 /**
@@ -32,6 +34,8 @@ public class StartAty extends BaseAty {
     public void init() {
         super.init();
         UIUtils.setWindowTitleWordColor(this);
+        BarUtils.setStatusBarColor(this,getResources().getColor(R.color.bg_color));
+        BarUtils.setStatusBarLightMode(this,false);
     }
 
     @Override
@@ -111,7 +115,7 @@ public class StartAty extends BaseAty {
                         startActivity(new Intent(StartAty.this, MainActivity.class));
                         finish();
                 }*/
-                startActivity(new Intent(StartAty.this, MainActivity.class));
+                startActivity(new Intent(StartAty.this, LoginAty.class));
                 finish();
             }
         }, 2000);

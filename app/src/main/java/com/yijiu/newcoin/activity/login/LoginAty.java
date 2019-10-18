@@ -10,6 +10,7 @@ import android.view.View;
 
 import androidx.databinding.DataBindingUtil;
 
+import com.yijiu.newcoin.MainActivity;
 import com.yijiu.newcoin.R;
 import com.yijiu.newcoin.base.BaseAty;
 import com.yijiu.newcoin.base.Constant;
@@ -21,6 +22,7 @@ import com.yijiu.newcoin.net.request.LoginRequest;
 import com.yijiu.newcoin.utils.PreferenceUtil;
 import com.yijiu.newcoin.utils.UIUtils;
 import com.yijiu.newcoin.utils.Utils;
+import com.yijiu.newcoin.utils.ui.BarUtils;
 
 import org.greenrobot.eventbus.EventBus;
 
@@ -39,6 +41,8 @@ public class LoginAty extends BaseAty {
     public void init() {
         super.init();
         UIUtils.setWindowTitleWordColor(this);
+        BarUtils.setStatusBarColor(this,getResources().getColor(R.color.bg_color));
+        BarUtils.setStatusBarLightMode(this,false);
     }
 
     @Override
@@ -46,6 +50,7 @@ public class LoginAty extends BaseAty {
         super.initView();
 
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_login);
+
         PreferenceUtil.commitBoolean(Constant.firstLogin, true);
     }
 
@@ -94,7 +99,9 @@ public class LoginAty extends BaseAty {
             @Override
             public void onClick(View v) {
                 UIUtils.buttonClick(mBinding.login);
-                checkEdit();
+//                checkEdit();
+                startActivity(new Intent(LoginAty.this, MainActivity.class));
+                finish();
             }
         });
         mBinding.forgetPwd.setOnClickListener(new View.OnClickListener() {
@@ -102,14 +109,14 @@ public class LoginAty extends BaseAty {
             public void onClick(View v) {
                 UIUtils.buttonClick(mBinding.login);
                 Intent intent = new Intent(LoginAty.this, ForgetAty.class);
-                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+               /* if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
                     ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(LoginAty.this, mBinding.login, "for");
                     if (options != null && !Build.MANUFACTURER.contains("samsung") && Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                         startActivity(intent, options.toBundle());
                     } else {
                         startActivity(intent);
                     }
-                } else
+                } else*/
                     startActivity(intent);
             }
         });
@@ -210,7 +217,7 @@ public class LoginAty extends BaseAty {
             return;
         }*/
 //        if (ischose == true) {
-            triggerLoading("");
+        triggerLoading("");
 //        } else if (ischose == false) {
 //            UIUtils.toast(UIUtils.getString(R.string.login_no_shfwxy));
 //        }
@@ -234,6 +241,7 @@ public class LoginAty extends BaseAty {
             UIUtils.print("appuserinfo..." + appUserInfo.toString());
             PreferenceUtil.saveUser(LoginAty.this, appUserInfo);
 //            EventBus.getDefault().postSticky(new EventMsg("shoppingcart", "0"));
+            startActivity(new Intent(this, MainActivity.class));
             finish();
         }
     }
