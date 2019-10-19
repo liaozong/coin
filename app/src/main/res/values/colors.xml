@@ -19,6 +19,10 @@
     <color name="right_word">#E3CEAD</color><!--亮字-->
     <color name="night_word">#9F927E</color><!--暗字-->
     <color name="qianse_bg">#4D4C47</color><!--浅色背景-->
+    <color name="cela_bg">#534F49</color><!--侧拉背景-->
+    <color name="word1">#EBCD91</color><!--字体颜色-->
+    <color name="word2">#9E9E9E</color><!--暗色字体颜色-->
+    <color name="night1_word">#2B2B2B</color><!--暗色背景颜色-->
 
 
 

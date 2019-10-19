@@ -2,6 +2,7 @@ package com.yijiu.newcoin.fragment;
 
 
 import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Address;
@@ -16,12 +17,15 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
 import com.uuzuche.lib_zxing.activity.CodeUtils;
@@ -38,11 +42,14 @@ import com.yijiu.newcoin.utils.UIUtils;
 import com.yijiu.newcoin.utils.Utils;
 import com.yijiu.newcoin.utils.country.RxLocationTool;
 import com.yijiu.newcoin.utils.ui.BarUtils;
+import com.zhouwei.mzbanner.holder.MZHolderCreator;
+import com.zhouwei.mzbanner.holder.MZViewHolder;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -63,16 +70,23 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
 
         mBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false);
 
-        UIUtils.setWindowTitleWordColor(getActivity());
-        UIUtils.setAtyTitleBgColor(getActivity(),R.color.colorAccent);
-
+        BarUtils.setStatusBarLightMode(getActivity(), false);
         mainActivity = (MainActivity) getActivity();
         return mBinding.getRoot();
     }
 
     @Override
     protected void initData() {
-            startGps();
+
+        startGps();
+
+        initBanner();
+        mBinding.ivLeft.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EventBus.getDefault().post(new EventMsg("leftopen", "1"));
+            }
+        });
     }
 
     private void toLocation() {
@@ -99,13 +113,13 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
     @Override
     protected void initEvent() {
 
-        mBinding.smartRefreshLayout.setOnRefreshListener(new OnRefreshListener() {
+        /*mBinding.smartRefreshLayout.setOnRefreshListener(new OnRefreshListener() {
             @Override
             public void onRefresh(RefreshLayout refreshlayout) {
                 triggerLoading("all");
-                refreshlayout.finishRefresh(2000/*,false*/);//传入false表示刷新失败
+                refreshlayout.finishRefresh(2000*//*,false*//*);//传入false表示刷新失败
             }
-        });
+        });*/
     }
 
     public static String marketId;
@@ -118,11 +132,11 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
         try {
             switch (requestType) {
                 case "all":/*获取首页全部数据*/
-                    mBinding.smartRefreshLayout.finishRefresh(0);
+//                    mBinding.smartRefreshLayout.finishRefresh(0);
                     mainActivity.disMisDialog(0);
                     break;
                 case "one":
-                        stopLocation();
+                    stopLocation();
                     mainActivity.disMisDialog(0);
                     break;
             }
@@ -169,12 +183,14 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
         super.onResume();
         triggerLoading("all");
 //        startGps();
+        mBinding.banner.start();//开始轮播
     }
 
     @Override
     public void onPause() {
         super.onPause();
 //        stopLocation();
+        mBinding.banner.pause();//暂停轮播
     }
 
     @Override
@@ -325,15 +341,15 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
 
         }
         PreferenceUtil.commitString("sAddress", sAddress);
-            UIUtils.print("request!!!sAddress//////////////////////////" + sAddress);
-            triggerLoading("one");
-            /*定位提示框也只弹出一次*/
-            UIUtils.postTaskSafely(new Runnable() {
-                @Override
-                public void run() {
+        UIUtils.print("request!!!sAddress//////////////////////////" + sAddress);
+        triggerLoading("one");
+        /*定位提示框也只弹出一次*/
+        UIUtils.postTaskSafely(new Runnable() {
+            @Override
+            public void run() {
 //                    showPop();
-                }
-            });
+            }
+        });
     }
 
     @Override
@@ -382,6 +398,51 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
         switch (v.getId()) {
 //            case R.id.ic_location:
 //                break;
+        }
+    }
+    private void initBanner() {
+        List<Integer> list = new ArrayList<>();
+        list.add(R.mipmap.ic_launcher);
+        list.add(R.mipmap.ic_launcher);
+        list.add(R.mipmap.ic_launcher);
+
+//        mBinding.recycler.setMoveSpeed(1);
+//        webBannerAdapter = new WebBannerAdapter(getActivity(), list);
+//        mBinding.recycler.setAdapter(webBannerAdapter);
+
+
+        mBinding.banner.setPages(list, new MZHolderCreator<BannerViewHolder>() {
+            @Override
+            public BannerViewHolder createViewHolder() {
+                return new BannerViewHolder();
+            }
+        });
+
+    }
+
+    public class BannerViewHolder implements MZViewHolder<Integer> {
+        private ImageView mImageView;
+
+        @Override
+        public View createView(Context context) {
+            // 返回页面布局
+            View view = LayoutInflater.from(context).inflate(R.layout.banner_item, null);
+            mImageView = (ImageView) view.findViewById(R.id.banner_image);
+            return view;
+        }
+
+        @Override
+        public void onBind(Context context, int position, Integer data) {
+            // 数据绑定
+//            mImageView.setImageResource(data);
+            RequestOptions requestOptions = new RequestOptions()
+//                        .circleCrop()
+                    .placeholder(R.mipmap.ic_launcher)
+                    .error(R.mipmap.ic_launcher);
+            Glide.with(context)
+                    .load(data)
+                    .apply(requestOptions)
+                    .into(mImageView);
         }
     }
 

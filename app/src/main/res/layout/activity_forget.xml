@@ -232,5 +232,19 @@
             app:layout_constraintEnd_toEndOf="@+id/et_safe_password"
             app:layout_constraintTop_toTopOf="@+id/et_safe_password"
             app:srcCompat="@mipmap/novisiable_word" />
+
+
+        <TextView
+            android:id="@+id/tv_get_verfy_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/getverfycode"
+            android:textColor="@color/word1"
+            android:gravity="center"
+            android:padding="@dimen/dpDimen5"
+            android:background="@drawable/bg_get_verfycode"
+            app:layout_constraintBottom_toTopOf="@+id/view6"
+            app:layout_constraintEnd_toEndOf="@+id/et_verify_code"
+            app:layout_constraintTop_toTopOf="@+id/et_verify_code" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -43,8 +43,13 @@
         <activity
             android:name=".activity.login.RegisterAty"
             android:launchMode="singleTask" />
+        <!--忘记密码-->
         <activity
             android:name=".activity.login.ForgetAty"
+            android:launchMode="singleTask" />
+        <!--用户信息-->
+        <activity
+            android:name=".activity.home.UserInfoAty"
             android:launchMode="singleTask" />
     </application>
 

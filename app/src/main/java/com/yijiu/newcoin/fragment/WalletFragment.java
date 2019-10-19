@@ -36,7 +36,7 @@ public class WalletFragment extends BaseFragment implements View.OnClickListener
 
         mBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_wallet, container, false);
 
-        BarUtils.setStatusBarLightMode(getActivity(), true);
+        BarUtils.setStatusBarLightMode(getActivity(), false);
         return mBinding.getRoot();
     }
 

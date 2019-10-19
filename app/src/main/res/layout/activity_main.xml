@@ -6,17 +6,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cela_bg"
+        tools:openDrawer="start">
     <com.next.easynavigation.view.EasyNavigationBar
         android:id="@+id/navigationBar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
         android:background="@color/allbackground"
+        app:Easy_lineHeight="0dp"
         app:Easy_navigationBackground="@color/qianse_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/left_view"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:visibility="visible"
+        android:background="@color/cela_bg"
+        app:headerLayout="@layout/drawer_header" />
+    </androidx.drawerlayout.widget.DrawerLayout>
 </androidx.constraintlayout.widget.ConstraintLayout></layout>

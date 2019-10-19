@@ -3,9 +3,9 @@ package com.yijiu.newcoin.factory;
 
 import com.yijiu.newcoin.base.BaseFragment;
 import com.yijiu.newcoin.fragment.HomeFragment;
-import com.yijiu.newcoin.fragment.MineFragment;
-import com.yijiu.newcoin.fragment.ShoppingCarFragment;
-import com.yijiu.newcoin.fragment.SortFragment;
+import com.yijiu.newcoin.fragment.AppFragment;
+import com.yijiu.newcoin.fragment.C2cFragment;
+import com.yijiu.newcoin.fragment.TouziFragment;
 import com.yijiu.newcoin.fragment.WalletFragment;
 
 import java.util.HashMap;
@@ -40,13 +40,13 @@ public class FragmentFactory {
                 fragment = new HomeFragment();
                 break;
             case DATA:
-                fragment = new SortFragment();
+                fragment = new TouziFragment();
                 break;
             case FIND:
-                fragment = new ShoppingCarFragment();
+                fragment = new C2cFragment();
                 break;
             case MINE:
-                fragment = new MineFragment();
+                fragment = new AppFragment();
                 break;
             case WALLET:
                 fragment = new WalletFragment();

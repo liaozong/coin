@@ -1,14 +1,19 @@
 package com.yijiu.newcoin;
 
 
+import android.content.Intent;
 import android.graphics.Color;
+import android.view.Gravity;
 import android.view.View;
 
+import androidx.core.view.GravityCompat;
 import androidx.databinding.DataBindingUtil;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
 import com.next.easynavigation.constant.Anim;
 import com.next.easynavigation.view.EasyNavigationBar;
+import com.yijiu.newcoin.activity.home.UserInfoAty;
 import com.yijiu.newcoin.base.BaseAty;
 import com.yijiu.newcoin.base.Constant;
 import com.yijiu.newcoin.databinding.ActivityMainBinding;
@@ -32,8 +37,8 @@ public class MainActivity extends BaseAty {
     @Override
     protected void initView() {
         super.initView();
-        BarUtils.setStatusBarColor(this,getResources().getColor(R.color.bg_color));
-        BarUtils.setStatusBarLightMode(this,false);
+        BarUtils.setStatusBarColor(this, getResources().getColor(R.color.allbackground));
+        BarUtils.setStatusBarLightMode(this, false);
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
     }
 
@@ -68,6 +73,18 @@ public class MainActivity extends BaseAty {
             UIUtils.toast(MainActivity.this, UIUtils.getString(R.string.phonenoInternet));*/
     }
 
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onEvent(EventMsg event) {
+        String type = event.getType();
+        if (type.equals("leftopen")) {
+            boolean drawerOpen = mBinding.drawerLayout.isDrawerOpen(GravityCompat.START);
+            if (drawerOpen)
+                closeLeft();
+            else
+                openLeft();
+        }
+    }
+
 
     @Override
     protected void loadingData(String requestType) {
@@ -76,9 +93,9 @@ public class MainActivity extends BaseAty {
 
     private List<Fragment> fragments = new ArrayList<>();
     //未选中icon
-    private int[] normalIcon = {R.mipmap.home_normal, R.mipmap.sort_normal, R.mipmap.shoppingcar_normal, R.mipmap.mine_normal, R.mipmap.mine_normal};
+    private int[] normalIcon = {R.mipmap.home_noclick, R.mipmap.touzi_noclick, R.mipmap.c2c_noclick, R.mipmap.app_noclick, R.mipmap.wallet_noclick};
     //选中时icon
-    private int[] selectIcon = {R.mipmap.home_select, R.mipmap.sort_select, R.mipmap.shoppingcar_select, R.mipmap.mine_select, R.mipmap.mine_select};
+    private int[] selectIcon = {R.mipmap.home_click, R.mipmap.touzi_click, R.mipmap.c2c_click, R.mipmap.app_click, R.mipmap.wallet_click};
 
     private void setViewPager() {
         fragments.add(FragmentFactory.createFragment(Constant.numzero));
@@ -95,8 +112,8 @@ public class MainActivity extends BaseAty {
                 .iconSize(20)     //Tab图标大小
                 .tabTextSize(10)   //Tab文字大小
                 .tabTextTop(2)     //Tab文字距Tab图标的距离
-                .normalTextColor(Color.parseColor("#DEDEDE"))   //Tab未选中时字体颜色
-                .selectTextColor(Color.parseColor("#3BAC6A"))   //Tab选中时字体颜色
+                .normalTextColor(Color.parseColor("#9E9E9E"))   //Tab未选中时字体颜色
+                .selectTextColor(Color.parseColor("#F0DA91"))   //Tab选中时字体颜色
                 .fragmentManager(getSupportFragmentManager())
                 .onTabClickListener(new EasyNavigationBar.OnTabClickListener() {   //Tab点击事件  return true 页面不会切换
                     @Override
@@ -123,5 +140,58 @@ public class MainActivity extends BaseAty {
         else if (position == 2)
             EventBus.getDefault().post(new EventMsg("main", "resumemine"));
 
+    }
+    public void openLeft() {
+        mBinding.drawerLayout.openDrawer(GravityCompat.START);
+    }
+
+    public void closeLeft() {
+        mBinding.drawerLayout.closeDrawers();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        EventBus.getDefault().unregister(this);
+    }
+
+    @Override
+    protected void initEvent() {
+        super.initEvent();
+        View headerView = mBinding.leftView.getHeaderView(0);
+        headerView.findViewById(R.id.rl_setting).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                closeLeft();
+
+            }
+        });
+        headerView.findViewById(R.id.rl_fenxiang).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                closeLeft();
+            }
+        });
+        headerView.findViewById(R.id.rl_team).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                closeLeft();
+            }
+        });
+        headerView.findViewById(R.id.rl_kefu).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                closeLeft();
+            }
+        });
+        headerView.findViewById(R.id.ll_userinfo).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                closeLeft();
+
+                startActivity(new Intent(MainActivity.this, UserInfoAty.class));
+            }
+        });
     }
 }
