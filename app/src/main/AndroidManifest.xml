@@ -51,6 +51,11 @@
         <activity
             android:name=".activity.home.UserInfoAty"
             android:launchMode="singleTask" />
+
+        <!--系统设置-->
+        <activity
+            android:name=".activity.home.SystemSettingAty"
+            android:launchMode="singleTask" />
     </application>
 
     <dist:module dist:instant="true" />

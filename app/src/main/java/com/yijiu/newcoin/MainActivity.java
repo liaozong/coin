@@ -13,6 +13,7 @@ import androidx.fragment.app.Fragment;
 
 import com.next.easynavigation.constant.Anim;
 import com.next.easynavigation.view.EasyNavigationBar;
+import com.yijiu.newcoin.activity.home.SystemSettingAty;
 import com.yijiu.newcoin.activity.home.UserInfoAty;
 import com.yijiu.newcoin.base.BaseAty;
 import com.yijiu.newcoin.base.Constant;
@@ -164,7 +165,7 @@ public class MainActivity extends BaseAty {
             @Override
             public void onClick(View v) {
                 closeLeft();
-
+                startActivity(new Intent(MainActivity.this, SystemSettingAty.class));
             }
         });
         headerView.findViewById(R.id.rl_fenxiang).setOnClickListener(new View.OnClickListener() {
