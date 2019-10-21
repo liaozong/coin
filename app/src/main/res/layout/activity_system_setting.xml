@@ -11,7 +11,7 @@
             android:id="@+id/in_title"
             layout="@layout/normal_title" />
 
-        <LinearLayout
+     <!--   <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -86,6 +86,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dpDimen30" />
         </LinearLayout>
+-->
 
+        <WebView
+            android:id="@+id/WebView"
+            android:layout_below="@id/view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </WebView>
     </LinearLayout>
 </layout>

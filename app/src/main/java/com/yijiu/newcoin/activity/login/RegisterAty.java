@@ -208,7 +208,7 @@ public class RegisterAty extends BaseAty {
         try {
             PreferenceUtil.commitString("useracount", username);
             /*手机号码. ,验证码,还有国家号*/
-            dealUserInfo(new LoginRequest(RequestData.login(username, pwd, id + "")).loadData());
+            dealUserInfo(new LoginRequest(RequestData.login(username, pwd)).loadData());
         } catch (Exception e) {
             UIUtils.print("request!!!..." + e.toString());
             UIUtils.toast(getString(R.string.request_failed));

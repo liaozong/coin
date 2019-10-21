@@ -19,11 +19,11 @@ public class RequestData {
         map.put("type", type);
         return map;
     }
-    public static Map login(String mobile, String password, String code) {
+    public static Map login(String mobile, String password) {
         Map<String, Object> map = getMap();
-        map.put("phone", mobile);
+        map.put("username", mobile);
         map.put("password", password);
-        map.put("countryId", code);
+//        map.put("countryId", code);
         return  map;
     }
 

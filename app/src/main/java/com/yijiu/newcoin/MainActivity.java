@@ -13,8 +13,10 @@ import androidx.fragment.app.Fragment;
 
 import com.next.easynavigation.constant.Anim;
 import com.next.easynavigation.view.EasyNavigationBar;
+import com.yijiu.newcoin.activity.home.KefuAty;
 import com.yijiu.newcoin.activity.home.SystemSettingAty;
 import com.yijiu.newcoin.activity.home.UserInfoAty;
+import com.yijiu.newcoin.activity.home.WebviewAty;
 import com.yijiu.newcoin.base.BaseAty;
 import com.yijiu.newcoin.base.Constant;
 import com.yijiu.newcoin.databinding.ActivityMainBinding;
@@ -172,6 +174,8 @@ public class MainActivity extends BaseAty {
             @Override
             public void onClick(View v) {
                 closeLeft();
+
+                startActivity(new Intent(MainActivity.this, WebviewAty.class));
             }
         });
         headerView.findViewById(R.id.rl_team).setOnClickListener(new View.OnClickListener() {
@@ -184,6 +188,7 @@ public class MainActivity extends BaseAty {
             @Override
             public void onClick(View v) {
                 closeLeft();
+                startActivity(new Intent(MainActivity.this, KefuAty.class));
             }
         });
         headerView.findViewById(R.id.ll_userinfo).setOnClickListener(new View.OnClickListener() {

@@ -18,9 +18,9 @@ public class RetrofitUtils {
     public static final String ImgUrl = "http://47.91.219.32:8882/";
     //    public static final String ImgUrl = "http://192.168.100.54:8882/";  /*图片测试地址*/
     /*正式地址*/
-    public static String Ip = "47.91.219.32:8881";//还有  ImgUrl   需要修改
+//    public static String Ip = "47.91.219.32:8881";
     /*测试地址*/
-//    public static String Ip = "192.168.100.54:8881";
+    public static String Ip = "http://192.168.100.199:8088";
 
     public static final MediaType OK_JSON = MediaType.parse("application/json; charset=utf-8");
 

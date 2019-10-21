@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="title"
+            type="String" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dpDimen30"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/close"
+                android:layout_width="@dimen/dpDimen45"
+                android:layout_height="@dimen/dpDimen45"
+                android:layout_marginTop="@dimen/dpDimen20"
+                android:layout_marginLeft="16dp">
+
+                <ImageView
+                    android:layout_width="@dimen/dpDimen16"
+                    android:layout_height="@dimen/dpDimen16"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/normal_back" />
+
+            </RelativeLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dpDimen60"
+                app:cardCornerRadius="10dp">
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:padding="0dp"
+                    app:tabIndicatorColor="#EEEFF0"
+                    app:tabIndicatorHeight="2dp"
+                    app:tabSelectedTextColor="#fff1f1f1"
+                    app:tabTextColor="#ff697386" />
+            </androidx.cardview.widget.CardView>
+
+            <!--
+                   <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                       android:id="@+id/smart_refreshLayout"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       app:srlEnableOverScrollBounce="true"
+                       app:srlEnableOverScrollDrag="true"
+                       app:srlReboundDuration="1000">
+                       &lt;!&ndash;苹果水滴的样式&ndash;&gt;
+                       <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content" />
+                       <androidx.recyclerview.widget.RecyclerView
+                               android:id="@+id/recyclerview_wares"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent">
+                       </androidx.recyclerview.widget.RecyclerView>
+                   </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+   -->
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</layout>

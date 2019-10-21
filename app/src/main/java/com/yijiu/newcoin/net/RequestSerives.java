@@ -19,7 +19,7 @@ import retrofit2.http.Query;
 
 public interface RequestSerives {
 
-    @POST("user/info/login")
+    @POST("api/Noauth/login")
     Call<String> login(
             @Body RequestBody info
     );

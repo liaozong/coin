@@ -149,9 +149,9 @@ public class LoginAty extends BaseAty {
                     if (isPwdYes) {
                         mBinding.login.setClickable(true);
                     }
-                    mBinding.tvErrorTips.setText("");
+//                    mBinding.tvErrorTips.setText("");
                 } else {
-                    mBinding.tvErrorTips.setText(UIUtils.getString(R.string.registeraty_phone_error));
+//                    mBinding.tvErrorTips.setText(UIUtils.getString(R.string.registeraty_phone_error));
                     isAcountYes = false;
                     mBinding.login.setClickable(true);
                 }
@@ -180,9 +180,9 @@ public class LoginAty extends BaseAty {
                     if (isAcountYes) {
                         mBinding.login.setClickable(true);
                     }
-                    mBinding.tvErrorTips.setText("");
+//                    mBinding.tvErrorTips.setText("");
                 } else {
-                    mBinding.tvErrorTips.setText(UIUtils.getString(R.string.new_pwd_length));
+//                    mBinding.tvErrorTips.setText(UIUtils.getString(R.string.new_pwd_length));
                     isPwdYes = false;
                     mBinding.login.setClickable(true);
                 }
@@ -229,7 +229,7 @@ public class LoginAty extends BaseAty {
         try {
             PreferenceUtil.commitString("useracount", username);
             /*手机号码. ,验证码,还有国家号*/
-            dealUserInfo(new LoginRequest(RequestData.login(username, pwd, id + "")).loadData());
+            dealUserInfo(new LoginRequest(RequestData.login(username, pwd)).loadData());
         } catch (Exception e) {
             UIUtils.print("request!!!..." + e.toString());
             UIUtils.toast(getString(R.string.request_failed));

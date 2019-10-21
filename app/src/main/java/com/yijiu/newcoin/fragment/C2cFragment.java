@@ -10,7 +10,7 @@ import androidx.databinding.DataBindingUtil;
 import com.yijiu.newcoin.R;
 import com.yijiu.newcoin.base.BaseFragment;
 import com.yijiu.newcoin.base.Constant;
-import com.yijiu.newcoin.databinding.FragmentShopBinding;
+import com.yijiu.newcoin.databinding.FragmentC2cBinding;
 import com.yijiu.newcoin.msg.EventMsg;
 import com.yijiu.newcoin.msg.NetEvent;
 import com.yijiu.newcoin.utils.PreferenceUtil;
@@ -28,12 +28,12 @@ import org.greenrobot.eventbus.ThreadMode;
  */
 public class C2cFragment extends BaseFragment {
 
-    FragmentShopBinding mBinding;
+    FragmentC2cBinding mBinding;
 
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
 
-        mBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_shop, container, false);
+        mBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_c2c, container, false);
 
         BarUtils.setStatusBarLightMode(getActivity(), false);
         return mBinding.getRoot();

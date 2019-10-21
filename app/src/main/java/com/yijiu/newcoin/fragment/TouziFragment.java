@@ -40,9 +40,6 @@ public class TouziFragment extends BaseFragment {
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
         mBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_touzi, container, false);
-
-//        UIUtils.setAtyTitleBgColor(getActivity(),R.color.bantouming);
-//        UIUtils.setWindowTitleWordColor(getActivity());
         return mBinding.getRoot();
     }
 
