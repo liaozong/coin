@@ -40,7 +40,8 @@
             android:gravity="center_vertical"
             android:hint="@string/register_hint_pwd"
             android:inputType="textPassword"
-            android:singleLine="true" android:textColor="@color/white"
+            android:singleLine="true"
+            android:textColor="@color/white"
             android:textColorHint="@color/wordhintcolor"
             android:textSize="@dimen/spDimen14"
             app:layout_constraintEnd_toEndOf="@+id/acount"
@@ -75,7 +76,8 @@
             android:hint="@string/verify_phone_num"
             android:inputType="number"
             android:maxLength="11"
-            android:singleLine="true" android:textColor="@color/white"
+            android:singleLine="true"
+            android:textColor="@color/white"
             android:textColorHint="@color/wordhintcolor"
             android:textSize="@dimen/spDimen14"
             app:layout_constraintEnd_toEndOf="parent"
@@ -106,7 +108,8 @@
             android:gravity="center_vertical"
             android:hint="@string/register_hint_safepwd"
             android:inputType="textPassword"
-            android:singleLine="true" android:textColor="@color/white"
+            android:singleLine="true"
+            android:textColor="@color/white"
             android:textColorHint="@color/wordhintcolor"
             android:textSize="@dimen/spDimen14"
             app:layout_constraintEnd_toEndOf="@+id/et_password"
@@ -138,7 +141,8 @@
             android:gravity="center_vertical"
             android:hint="@string/invitation_code"
             android:inputType="textPassword"
-            android:singleLine="true" android:textColor="@color/white"
+            android:singleLine="true"
+            android:textColor="@color/white"
             android:textColorHint="@color/wordhintcolor"
             android:textSize="@dimen/spDimen14"
             app:layout_constraintEnd_toEndOf="@+id/et_safe_password"
@@ -170,7 +174,9 @@
             android:gravity="center_vertical"
             android:hint="@string/edit_verify_code"
             android:inputType="textPassword"
-            android:singleLine="true" android:textColor="@color/white"
+            android:maxLength="6"
+            android:singleLine="true"
+            android:textColor="@color/white"
             android:textColorHint="@color/wordhintcolor"
             android:textSize="@dimen/spDimen14"
             app:layout_constraintEnd_toEndOf="@+id/et_invitation_code"
@@ -248,50 +254,50 @@
             app:layout_constraintEnd_toEndOf="@+id/view3"
             app:layout_constraintTop_toBottomOf="@+id/et_password" />
 
-     <!--   <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dpDimen16"
-            android:gravity="center_horizontal"
-            android:orientation="horizontal"
-            app:layout_constraintTop_toBottomOf="@+id/login"
-            tools:ignore="MissingConstraints">
+        <!--   <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/dpDimen16"
+               android:gravity="center_horizontal"
+               android:orientation="horizontal"
+               app:layout_constraintTop_toBottomOf="@+id/login"
+               tools:ignore="MissingConstraints">
 
-            <ImageView
-                android:id="@+id/login_imageview"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/shopischoose" />
+               <ImageView
+                   android:id="@+id/login_imageview"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@mipmap/shopischoose" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="@dimen/dpDimen10"
-                android:text="我已同意"
-                android:textColor="@color/address_bg_text"
-                android:textSize="@dimen/spDimen11" />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical"
+                   android:layout_marginLeft="@dimen/dpDimen10"
+                   android:text="我已同意"
+                   android:textColor="@color/address_bg_text"
+                   android:textSize="@dimen/spDimen11" />
 
-            <TextView
-                android:id="@+id/tv_login_protocol"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:text="《普晨超市生活服务协议》"
-                android:textColor="@color/sort_color_bg"
-                android:textSize="@dimen/spDimen11" />
-        </LinearLayout>-->
+               <TextView
+                   android:id="@+id/tv_login_protocol"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical"
+                   android:text="《普晨超市生活服务协议》"
+                   android:textColor="@color/sort_color_bg"
+                   android:textSize="@dimen/spDimen11" />
+           </LinearLayout>-->
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="@dimen/dpDimen60"
             android:layout_height="@dimen/dpDimen30"
             android:layout_marginTop="70dp"
+            android:src="@mipmap/register_word"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:src="@mipmap/register_word" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -311,6 +317,7 @@
             app:layout_constraintEnd_toEndOf="@+id/et_password"
             app:layout_constraintTop_toTopOf="@+id/et_password"
             app:srcCompat="@mipmap/visiable_word" />
+
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="@dimen/dpDimen16"
@@ -324,11 +331,11 @@
             android:id="@+id/tv_get_verfy_code"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/getverfycode"
-            android:textColor="@color/word1"
+            android:background="@drawable/bg_get_verfycode"
             android:gravity="center"
             android:padding="@dimen/dpDimen5"
-            android:background="@drawable/bg_get_verfycode"
+            android:text="@string/getverfycode"
+            android:textColor="@color/word1"
             app:layout_constraintBottom_toTopOf="@+id/view6"
             app:layout_constraintEnd_toEndOf="@+id/et_verify_code"
             app:layout_constraintTop_toTopOf="@+id/et_verify_code" />

@@ -1,44 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
->
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+
         <variable
-                name="title"
-                type="String"/>
+            name="title"
+            type="String" />
     </data>
-    <LinearLayout android:layout_width="match_parent"
-                  android:layout_marginTop="@dimen/dpDimen30"
-                  android:layout_height="match_parent"
-                  android:orientation="vertical"
-    >
-        <LinearLayout android:layout_marginTop="@dimen/dpDimen30"
-                      android:layout_width="match_parent" android:orientation="vertical"
-                      android:layout_height="match_parent">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-       <!--     <include
-                    app:string="@{title}"
-                    android:id="@+id/sortnormal"
-                    layout="@layout/sorttitle"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-            />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dpDimen80"
+                android:background="@color/allbackground">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dpDimen20"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/dpDimen12"
+                    android:src="@mipmap/wallet_title_word" />
+            </RelativeLayout>
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/allbackground"
+                android:padding="0dp"
+                app:tabIndicatorColor="@color/wallet_word"
+                app:tabIndicatorHeight="2dp"
+                app:tabSelectedTextColor="@color/wallet_word"
+                app:tabTextColor="@color/wallet_huiword" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vpContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <!--     <include
+                         app:string="@{title}"
+                         android:id="@+id/sortnormal"
+                         layout="@layout/sorttitle"
+                         app:layout_constraintEnd_toEndOf="parent"
+                         app:layout_constraintStart_toStartOf="parent"
+                         app:layout_constraintTop_toTopOf="parent"
+                 />-->
             <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-            <!--    &lt;!&ndash;左边的一级列表&ndash;&gt;
-                <android.support.v7.widget.RecyclerView
-                        android:layout_marginTop="@dimen/dpDimen15"
-                        android:id="@+id/recyclerview_category"
-                        android:layout_width="@dimen/dpDimen84"
-                        android:layout_height="match_parent"
-                        android:background="@color/white"
-                >
-                </android.support.v7.widget.RecyclerView>-->
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <!--    &lt;!&ndash;左边的一级列表&ndash;&gt;
+                    <android.support.v7.widget.RecyclerView
+                            android:layout_marginTop="@dimen/dpDimen15"
+                            android:id="@+id/recyclerview_category"
+                            android:layout_width="@dimen/dpDimen84"
+                            android:layout_height="match_parent"
+                            android:background="@color/white"
+                    >
+                    </android.support.v7.widget.RecyclerView>-->
                 <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
                     android:id="@+id/smart_refreshLayout"
                     android:layout_width="match_parent"
@@ -50,11 +79,11 @@
                     <com.scwang.smartrefresh.layout.header.ClassicsHeader
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
+
                     <androidx.recyclerview.widget.RecyclerView
-                            android:id="@+id/recyclerview_wares"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-                    </androidx.recyclerview.widget.RecyclerView>
+                        android:id="@+id/recyclerview_wares"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
                 </com.scwang.smartrefresh.layout.SmartRefreshLayout>
 
 

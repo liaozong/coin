@@ -59,7 +59,7 @@ public interface RequestSerives {
 
     @GET("user/info/sendRegisterSms")
     Call<String> getVerifyCode(/*@Header("x-auth-token") String token, @Header("Language") String Language,*/
-            @Query("phoneNumber") String phoneNumber, @Query("countryId") String countryId
+            @Query("phoneNumber") String phoneNumber
     );
 
     /*推出登录*/

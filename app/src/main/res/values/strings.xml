@@ -20,8 +20,12 @@
     <string name="clickregiest">注册</string>
     <string name="forget_pass">忘记密码</string>
     <string name="registeraty_phone_error">请输入正确的手机号码</string>
-    <string name="new_pwd_length">密码不能小于6位</string>
+    <string name="new_pwd_length">密码不能小于8位</string>
+    <string name="pay_pwd_length">密码不能小于6位</string>
     <string name="forget_edit_pwd">请输入登录密码</string>
+    <string name="edit_invatecode">请输入邀请码</string>
+    <string name="edit_verfycode">请输入验证码</string>
+    <string name="edit_pay_pwd">请输入支付密码</string>
     <string name="net_error">网络异常，请检查后重试</string>
     <string name="loginagain">登录失效，请重新登录</string>
     <string name="request_failed">请求失败</string>
@@ -31,4 +35,6 @@
     <string name="kefu">客服</string>
     <string name="getverfycode">获取验证码</string>
     <string name="youxiqiandao">游戏签到</string>
+    <string name="sended">已经发送</string>
+    <string name="re_send_code">再次获取验证码</string>
 </resources>

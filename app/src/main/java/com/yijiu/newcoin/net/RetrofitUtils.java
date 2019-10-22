@@ -20,7 +20,7 @@ public class RetrofitUtils {
     /*正式地址*/
 //    public static String Ip = "47.91.219.32:8881";
     /*测试地址*/
-    public static String Ip = "http://192.168.100.199:8088";
+    public static String Ip = "192.168.100.199:8088";
 
     public static final MediaType OK_JSON = MediaType.parse("application/json; charset=utf-8");
 

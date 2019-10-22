@@ -24,6 +24,8 @@
     <color name="word1">#EBCD91</color><!--字体颜色-->
     <color name="word2">#9E9E9E</color><!--暗色字体颜色-->
     <color name="night1_word">#2B2B2B</color><!--暗色背景颜色-->
+    <color name="wallet_huiword">#b9b9b9</color><!--暗色钱包文字颜色-->
+    <color name="wallet_word">#e8d2b0</color><!--明色钱包文字颜色-->
 
 
 

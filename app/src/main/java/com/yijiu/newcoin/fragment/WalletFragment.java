@@ -8,11 +8,13 @@ import android.view.ViewGroup;
 
 import androidx.annotation.RequiresApi;
 import androidx.databinding.DataBindingUtil;
+import androidx.fragment.app.Fragment;
 
+import com.google.android.material.tabs.TabLayout;
 import com.yijiu.newcoin.R;
+import com.yijiu.newcoin.adapter.WalletPagerAdapter;
 import com.yijiu.newcoin.base.BaseFragment;
 import com.yijiu.newcoin.base.Constant;
-import com.yijiu.newcoin.databinding.FragmentMineBinding;
 import com.yijiu.newcoin.databinding.FragmentWalletBinding;
 import com.yijiu.newcoin.msg.EventMsg;
 import com.yijiu.newcoin.msg.NetEvent;
@@ -23,6 +25,9 @@ import com.yijiu.newcoin.utils.ui.BarUtils;
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -55,7 +60,49 @@ public class WalletFragment extends BaseFragment implements View.OnClickListener
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     @Override
     protected void initData() {
-        boolean firstLogin = PreferenceUtil.getBoolean(Constant.firstLogin, true);
+//        boolean firstLogin = PreferenceUtil.getBoolean(Constant.firstLogin, true);
+        initTabLayout();
+
+
+    }
+    private List<String> datas = new ArrayList<>();
+    private List<Fragment> fragments = new ArrayList<>();
+    private void initTabLayout() {
+        datas.add("DILI");
+        datas.add("USDT");
+        datas.add("资产钱包");
+        datas.add("通关文书");
+        datas.add("平移钱包");
+        //循环注入标签
+        for (String tab : datas) {
+            mBinding.tabLayout.addTab(mBinding.tabLayout.newTab().setText(tab));
+        }
+        //设置TabLayout点击事件
+        for (int i = 0; i < datas.size(); i++) {
+
+            fragments.add(MultiFragment.newInstance(i));
+        }
+        mBinding. tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                mBinding.vpContent.setCurrentItem(tab.getPosition());
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
+        WalletPagerAdapter  adapter = new WalletPagerAdapter(getChildFragmentManager(), datas, fragments);
+        mBinding.vpContent.setAdapter(adapter);
+        mBinding.vpContent.setOffscreenPageLimit(datas.size());
+        mBinding.tabLayout.setupWithViewPager(mBinding.vpContent);
+
     }
 
 
@@ -142,4 +189,5 @@ public class WalletFragment extends BaseFragment implements View.OnClickListener
         super.onDestroy();
         EventBus.getDefault().unregister(this);
     }
+
 }
