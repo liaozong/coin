@@ -2,12 +2,12 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
         <LinearLayout
+            android:id="@+id/ll_all"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dpDimen10"
@@ -25,6 +25,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="USDT"
+                    android:layout_marginLeft="@dimen/dpDimen15"
                     android:textColor="#ffffffff"
                     android:textSize="17sp" />
 
@@ -80,6 +81,7 @@
                     android:layout_height="wrap_content"
                     android:text="DILI"
                     android:textColor="#ffffffff"
+                    android:layout_marginLeft="@dimen/dpDimen15"
                     android:textSize="17sp" />
 
                 <LinearLayout
@@ -106,10 +108,73 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:id="@+id/ll_resome"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dpDimen40"
+                android:layout_marginLeft="@dimen/dpDimen15"
+                android:layout_marginTop="@dimen/dpDimen40"
+                android:layout_marginRight="@dimen/dpDimen15"
+                android:background="@mipmap/wallet_re"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_item_chongzhi"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="充值"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_item_tixian"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/wallet_fenge"
+                    android:gravity="center"
+                    android:text="提现"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_item_zhangdan"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/wallet_fenge"
+                    android:gravity="center"
+                    android:text="账单"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_item_huazhuan"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/wallet_fenge"
+                    android:gravity="center"
+                    android:text="划转"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dpDimen50" />
         </LinearLayout>
-    </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_no_open"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:text="@string/no_open"
+            android:textSize="@dimen/spDimen18"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
 
 </layout>

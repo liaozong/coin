@@ -39,11 +39,22 @@ public class MultiFragment extends BaseFragment {
     protected void initData() {
         super.initData();
 
+        setVisiable();
+    }
+
+    private void setVisiable() {
+        mBinding.tvNoOpen.setVisibility(View.GONE);
         if (mPage == 0) {
             mBinding.llUsdt.setVisibility(View.GONE);
-
+            mBinding.tvItemHuazhuan.setVisibility(View.GONE);
         } else if (mPage == 1) {
             mBinding.llDili.setVisibility(View.GONE);
+        }else if (mPage==2){
+            mBinding.tvItemChongzhi.setVisibility(View.GONE);
+            mBinding.tvItemTixian.setVisibility(View.GONE);
+        }else {
+            mBinding.tvNoOpen.setVisibility(View.VISIBLE);
+            mBinding.llAll.setVisibility(View.GONE);
         }
     }
 

@@ -64,6 +64,10 @@
         <activity
             android:name=".activity.home.KefuAty"
             android:launchMode="singleTask" />
+        <!--充值-->
+        <activity
+            android:name=".activity.wallet.RechargeAty"
+            android:launchMode="singleTask" />
     </application>
 
     <dist:module dist:instant="true" />

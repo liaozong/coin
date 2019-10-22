@@ -85,6 +85,7 @@ public class WalletFragment extends BaseFragment implements View.OnClickListener
         mBinding. tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
+
                 mBinding.vpContent.setCurrentItem(tab.getPosition());
             }
 

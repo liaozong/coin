@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/night1_word"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/in_title"
+            layout="@layout/normal_title" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"  android:background="@color/allbackground"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="@dimen/dpDimen10"
+                >
+                <ImageView
+                    android:id="@+id/iv_two_code"
+                    android:layout_width="@dimen/dpDimen120"
+                    android:layout_height="@dimen/dpDimen120"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dpDimen30"
+                    />
+                <TextView
+                    android:id="@+id/tv_scan_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_two_code"
+                    android:layout_marginTop="@dimen/dpDimen15"
+                    android:text="扫描二维码发起充值"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#ff9e9e9e"
+                    android:textSize="12sp"
+                    />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dpDimen16"
+                android:layout_marginTop="@dimen/dpDimen40"
+                android:text="充值地址"
+                android:textColor="#ff9e9e9e"
+                android:textSize="14sp"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dpDimen50">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="32qsfgh65432234567y"
+                    android:layout_centerVertical="true"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="复制"
+                    android:textColor="#ff9e9e9e"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="12sp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dpDimen1"
+                    android:background="@color/cela_bg"
+                    android:layout_marginLeft="@dimen/dpDimen15"
+                    android:layout_marginRight="@dimen/dpDimen15"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dpDimen6"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/dpDimen280"
+                android:background="@mipmap/btn_click_bg"
+                    android:layout_gravity="center_horizontal"
+                android:id="@+id/rl_save_pic"
+                android:layout_marginTop="@dimen/dpDimen100"
+                android:layout_height="@dimen/dpDimen48">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="保存图片"
+                    android:textColor="#ffffffff"
+                    android:textSize="18sp"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

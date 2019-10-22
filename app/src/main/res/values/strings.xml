@@ -37,4 +37,11 @@
     <string name="youxiqiandao">游戏签到</string>
     <string name="sended">已经发送</string>
     <string name="re_send_code">再次获取验证码</string>
+    <string name="no_open">暂未开放</string>
+    <string name="failed">失败</string>
+    <string name="save_pictures">保存图片</string>
+    <string name="wait_picture_besave">图片正在保存中，请稍等...</string>
+
+    <string name="pictures_saved_successfully">图片保存成功！</string>
+    <string name="pictures_saved_failed">图片保存失败！</string>
 </resources>
