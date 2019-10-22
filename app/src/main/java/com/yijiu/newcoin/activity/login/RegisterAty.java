@@ -16,6 +16,7 @@ import com.yijiu.newcoin.databinding.ActivityRegisterBinding;
 import com.yijiu.newcoin.msg.EventMsg;
 import com.yijiu.newcoin.net.RequestData;
 import com.yijiu.newcoin.net.request.LoginRequest;
+import com.yijiu.newcoin.net.request.RegisterRequest;
 import com.yijiu.newcoin.utils.PreferenceUtil;
 import com.yijiu.newcoin.utils.UIUtils;
 import com.yijiu.newcoin.utils.Utils;
@@ -208,7 +209,7 @@ public class RegisterAty extends BaseAty {
         try {
             PreferenceUtil.commitString("useracount", username);
             /*手机号码. ,验证码,还有国家号*/
-            dealUserInfo(new LoginRequest(RequestData.login(username, pwd)).loadData());
+            dealUserInfo(new RegisterRequest(RequestData.register("",username, pwd,"","")).loadData());
         } catch (Exception e) {
             UIUtils.print("request!!!..." + e.toString());
             UIUtils.toast(getString(R.string.request_failed));

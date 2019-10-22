@@ -28,12 +28,13 @@ public class RequestData {
     }
 
 
-    public static Map register(String verificationCode, String countryId, String password, String phone) {
+    public static Map register(String verificationCode,  String password, String username,String paypwd,String invite_code) {
         Map<String, Object> map = getMap();
-        map.put("verificationCode", verificationCode);
-        map.put("countryId", countryId);
+        map.put("mobile_code", verificationCode);
+        map.put("paypwd", paypwd);
         map.put("password", password);
-        map.put("phone", phone);
+        map.put("username", username);
+        map.put("invite_code", invite_code);
         return map;
     }
 }

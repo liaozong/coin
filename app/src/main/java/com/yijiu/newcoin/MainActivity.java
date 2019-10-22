@@ -3,12 +3,10 @@ package com.yijiu.newcoin;
 
 import android.content.Intent;
 import android.graphics.Color;
-import android.view.Gravity;
 import android.view.View;
 
 import androidx.core.view.GravityCompat;
 import androidx.databinding.DataBindingUtil;
-import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
 import com.next.easynavigation.constant.Anim;

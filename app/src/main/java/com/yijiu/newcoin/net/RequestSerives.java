@@ -24,6 +24,17 @@ public interface RequestSerives {
             @Body RequestBody info
     );
 
+    //        @Headers({"Content-Type: application/json", "Accept: application/json"})//需要添加头
+    @POST("api/Noauth/register")
+//    @FormUrlEncoded
+    Call<String> register(@Body RequestBody body);
+//    Call<String> registed(@FieldMap Map<String, String> map);
+
+    /*刷新，重新获取用户信息*/
+    @POST("api/User/myCenter")
+    Call<String> userInfo(@Body RequestBody body);
+
+
     @POST("user/saveFeedback")
     @FormUrlEncoded
     Call<String> feedBack(
@@ -55,9 +66,7 @@ public interface RequestSerives {
     @POST("user/info/logout")
     Call<String> logout(@Header("token") String token);
 
-    /*刷新，重新获取用户信息*/
-    @POST("user/info/refreshUser")
-    Call<String> refreshUser(@Header("token") String token);
+
 
 
     @GET("index/getAllInfo")
@@ -132,11 +141,7 @@ public interface RequestSerives {
             @Query("phoneNumber") String phoneNumber
     );
 
-    //        @Headers({"Content-Type: application/json", "Accept: application/json"})//需要添加头
-    @POST("user/info/register")
-//    @FormUrlEncoded
-    Call<String> registed(@Body RequestBody info);
-//    Call<String> registed(@FieldMap Map<String, String> map);
+
 
     @POST("user/info/resetPwd")
     Call<String> resetPwd(@Body RequestBody info);
