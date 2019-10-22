@@ -37,11 +37,14 @@ import com.yijiu.newcoin.base.BaseFragment;
 import com.yijiu.newcoin.databinding.FragmentHomeBinding;
 import com.yijiu.newcoin.msg.EventMsg;
 import com.yijiu.newcoin.msg.NetEvent;
+import com.yijiu.newcoin.net.RetrofitUtils;
 import com.yijiu.newcoin.utils.PreferenceUtil;
 import com.yijiu.newcoin.utils.UIUtils;
 import com.yijiu.newcoin.utils.Utils;
 import com.yijiu.newcoin.utils.country.RxLocationTool;
 import com.yijiu.newcoin.utils.ui.BarUtils;
+import com.yijiu.newcoin.view.RoundedCornersTransform;
+import com.youth.banner.loader.ImageLoader;
 import com.zhouwei.mzbanner.holder.MZHolderCreator;
 import com.zhouwei.mzbanner.holder.MZViewHolder;
 
@@ -78,7 +81,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
     @Override
     protected void initData() {
 
-        startGps();
+//        startGps();
 
         initBanner();
         mBinding.ivLeft.setOnClickListener(new View.OnClickListener() {
@@ -136,7 +139,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
                     mainActivity.disMisDialog(0);
                     break;
                 case "one":
-                    stopLocation();
+//                    stopLocation();
                     mainActivity.disMisDialog(0);
                     break;
             }
@@ -173,7 +176,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
 
         if (event.getType() != null && event.getType().equals("location")) {
             triggerLoading("all");
-            stopLocation();
+//            stopLocation();
         }
 
     }
@@ -183,14 +186,26 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
         super.onResume();
         triggerLoading("all");
 //        startGps();
-        mBinding.banner.start();//开始轮播
+//        mBinding.banner.start();//开始轮播
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        mBinding.banner.startAutoPlay();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        mBinding.banner.stopAutoPlay();
     }
 
     @Override
     public void onPause() {
         super.onPause();
 //        stopLocation();
-        mBinding.banner.pause();//暂停轮播
+//        mBinding.banner.pause();//暂停轮播
     }
 
     @Override
@@ -198,7 +213,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
         super.onDestroy();
         EventBus.getDefault().unregister(this);
 
-        stopLocation();
+//        stopLocation();
     }
 
     private String Mac = "";
@@ -387,11 +402,11 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
         }
     }
 
-    private void stopLocation() {
+   /* private void stopLocation() {
         if (gpsListener != null && gpsManager != null) {
             gpsManager.removeUpdates(gpsListener);
         }
-    }
+    }*/
 
     @Override
     public void onClick(View v) {
@@ -402,22 +417,36 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
     }
     private void initBanner() {
         List<Integer> list = new ArrayList<>();
-        list.add(R.mipmap.ic_launcher);
-        list.add(R.mipmap.ic_launcher);
-        list.add(R.mipmap.ic_launcher);
+        list.add(R.mipmap.viewpagerpic1);
+        list.add(R.mipmap.viewpagerpic1);
+        list.add(R.mipmap.viewpagerpic1);
 
 //        mBinding.recycler.setMoveSpeed(1);
 //        webBannerAdapter = new WebBannerAdapter(getActivity(), list);
 //        mBinding.recycler.setAdapter(webBannerAdapter);
 
 
-        mBinding.banner.setPages(list, new MZHolderCreator<BannerViewHolder>() {
+     /*   mBinding.banner.setPages(list, new MZHolderCreator<BannerViewHolder>() {
             @Override
             public BannerViewHolder createViewHolder() {
                 return new BannerViewHolder();
             }
-        });
+        });*/
 
+        //设置图片加载器
+        mBinding.banner.setImageLoader(new GlideImageLoader());
+        List mImages = new ArrayList<String>();
+   /*     List<String> bannerList = productDetailData.getBannerList();
+        if (bannerList != null && bannerList.size() != 0) {
+            for (String bannerUrl : bannerList) {
+                mImages.add(RetrofitUtils.ImgUrl + bannerUrl);
+                UIUtils.print("request!!!toimg...." + RetrofitUtils.ImgUrl + bannerUrl);
+            }
+        }*/
+        //设置图片集合
+        mBinding. banner.setImages(list);
+        //banner设置方法全部调用完毕时最后调用
+        mBinding. banner.start();
     }
 
     public class BannerViewHolder implements MZViewHolder<Integer> {
@@ -445,6 +474,34 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
                     .into(mImageView);
         }
     }
+    public class GlideImageLoader extends ImageLoader {
+        @Override
+        public void displayImage(Context context, Object path, ImageView imageView) {
+            /**
+             注意：
+             1.图片加载器由自己选择，这里不限制，只是提供几种使用方法
+             2.返回的图片路径为Object类型，由于不能确定你到底使用的那种图片加载器，
+             传输的到的是什么格式，那么这种就使用Object接收和返回，你只需要强转成你传输的类型就行，
+             切记不要胡乱强转！
+             */
+            RoundedCornersTransform transform = new RoundedCornersTransform(UIUtils.getContext(), 20);
+            transform.setNeedCorner(true, true, true, true);
+            RequestOptions options = new RequestOptions()
+                    .centerCrop()
+                    .placeholder(R.mipmap.viewpagerpic1)
+                    .error(R.mipmap.viewpagerpic1)
+                    .transform(transform);
+            //Glide 加载图片简单用法
+            Glide.with(context).load(path).apply(options).into(imageView);
 
+       /*     //Picasso 加载图片简单用法
+            Picasso.with(context).load(path).into(imageView);
+
+            //用fresco加载图片简单用法，记得要写下面的createImageView方法
+            Uri uri = Uri.parse((String) path);
+            imageView.setImageURI(uri);*/
+        }
+
+    }
 
 }

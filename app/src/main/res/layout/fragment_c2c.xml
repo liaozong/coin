@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <RelativeLayout
+           <!-- <RelativeLayout
                 android:id="@+id/close"
                 android:layout_width="@dimen/dpDimen45"
                 android:layout_height="@dimen/dpDimen45"
@@ -48,7 +48,7 @@
                     app:tabSelectedTextColor="#fff1f1f1"
                     app:tabTextColor="#ff697386" />
             </androidx.cardview.widget.CardView>
-
+-->
             <!--
                    <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
                        android:id="@+id/smart_refreshLayout"

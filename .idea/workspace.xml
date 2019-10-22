@@ -6,41 +6,78 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2aa43e8-020c-4f18-b963-dec9fe18b5b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/activity/home/KefuAty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/activity/home/WebviewAty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/adapter/C2cPagerAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_edit_touzi.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_webview.xml" afterDir="false" />
+    <list default="true" id="d2aa43e8-020c-4f18-b963-dec9fe18b5b7" name="Default Changelist" comment="登录注册页面以及网络请求">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/view/RoundedCornersTransform.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/qiandaopic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/title_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/titlepic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/userinfopic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/viewpagerpic1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/qiandaopic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/title_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/titlepic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/userinfopic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/viewpagerpic1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/qiandaopic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/title_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/titlepic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/userinfopic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/viewpagerpic1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__cn_yipianfengye_android_zxing_library_2_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__cn_yipianfengye_android_zxing_library_2_2_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_contrarywind_Android_PickerView_4_1_8_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_contrarywind_Android_PickerView_4_1_8_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_darsh_multipleimageselect_multipleimageselect_1_0_4_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_darsh_multipleimageselect_multipleimageselect_1_0_4_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_CymChad_BaseRecyclerViewAdapterHelper_2_9_42_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_CymChad_BaseRecyclerViewAdapterHelper_2_9_42_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_GrenderG_Toasty_1_4_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_GrenderG_Toasty_1_4_2_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_arcadefire_nice_spinner_1_4_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_arcadefire_nice_spinner_1_4_3_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_8_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_8_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_glide_4_8_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_glide_4_8_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_forvv231_EasyNavigation_1_0_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_forvv231_EasyNavigation_1_0_3_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_jdsjlzx_LRecyclerView_1_4_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_jdsjlzx_LRecyclerView_1_4_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_pinguo_zhouwei_MZBannerView_v2_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_pinguo_zhouwei_MZBannerView_v2_0_2_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_tbruyelle_rxpermissions_0_10_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_tbruyelle_rxpermissions_0_10_2_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jph_takephoto_takephoto_library_4_0_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jph_takephoto_takephoto_library_4_0_3_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_kyleduo_switchbutton_library_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_kyleduo_switchbutton_library_2_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_scwang_smartrefresh_SmartRefreshLayout_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_scwang_smartrefresh_SmartRefreshLayout_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_soundcloud_android_crop_lib_crop_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_soundcloud_android_crop_lib_crop_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_youth_banner_banner_1_4_10_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_youth_banner_banner_1_4_10_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__me_shaohui_advancedluban_library_1_3_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__me_shaohui_advancedluban_library_1_3_2_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_xutils_xutils_3_5_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_xutils_xutils_3_5_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/activity/home/SystemSettingAty.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/activity/home/SystemSettingAty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/activity/login/ForgetAty.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/activity/login/ForgetAty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/activity/login/LoginAty.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/activity/login/LoginAty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/activity/login/RegisterAty.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/activity/login/RegisterAty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/fragment/C2cFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/fragment/C2cFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/fragment/TouziFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/fragment/TouziFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/net/RequestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/net/RequestData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/net/RequestSerives.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/net/RequestSerives.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/net/RetrofitUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/net/RetrofitUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_forget.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_forget.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_system_setting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_system_setting.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_shop.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_c2c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/fragment/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/fragment/HomeFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/banner_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/banner_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_c2c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_c2c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_touzi.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_touzi.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/app_click.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/app_click.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/app_noclick.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/app_noclick.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/c2c_click.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/c2c_click.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/c2c_noclick.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/c2c_noclick.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/home_click.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/home_click.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/home_noclick.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/home_noclick.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/touzi_click.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/touzi_click.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/touzi_noclick.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/touzi_noclick.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/wallet_click.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/wallet_click.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/wallet_noclick.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/wallet_noclick.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,54 +88,43 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="emulator-5554" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="5ENDU19221008754" />
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view>
-          <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="coin" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
-            <select />
-          </tree_state>
-        </projects_view>
+        <projects_view />
       </state>
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="177" column="70" selection-start-line="177" selection-start-column="60" selection-end-line="177" selection-end-column="70" />
-              <folding>
-                <element signature="e#5994#6139#0" expanded="true" />
-                <element signature="e#6138#6139#0" expanded="true" />
-                <element signature="e#6420#6565#0" expanded="true" />
-                <element signature="e#6564#6565#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="195">
+              <caret line="41" column="44" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/fragment/TouziFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-113">
+              <caret line="36" column="25" lean-forward="true" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_c2c.xml">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_touzi.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="49" column="48" lean-forward="true" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
+            <state relative-caret-position="242">
+              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
               <folding>
-                <element signature="e#401#419#0" expanded="true" />
-                <element signature="e#689#707#0" expanded="true" />
-                <element signature="e#746#764#0" expanded="true" />
-                <element signature="e#806#824#0" expanded="true" />
-                <element signature="e#944#962#0" expanded="true" />
-                <element signature="e#1005#1023#0" expanded="true" />
-                <element signature="e#1362#1380#0" expanded="true" />
+                <element signature="e#884#902#0" expanded="true" />
+                <element signature="e#1474#1492#0" expanded="true" />
+                <element signature="e#1705#1723#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -106,13 +132,68 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/fragment/C2cFragment.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/fragment/HomeFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="389">
+              <caret line="198" column="26" lean-forward="true" selection-start-line="198" selection-start-column="26" selection-end-line="198" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="38" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="38" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#778#796#0" expanded="true" />
+                <element signature="e#912#930#0" expanded="true" />
+                <element signature="e#976#994#0" expanded="true" />
+                <element signature="e#1041#1059#0" expanded="true" />
+                <element signature="e#1168#1185#0" expanded="true" />
+                <element signature="e#1368#1386#0" expanded="true" />
+                <element signature="e#1600#1618#0" expanded="true" />
+                <element signature="e#3060#3077#0" expanded="true" />
+                <element signature="e#3126#3144#0" expanded="true" />
+                <element signature="e#3191#3209#0" expanded="true" />
+                <element signature="e#3257#3275#0" expanded="true" />
+                <element signature="e#3113#3132#0" expanded="true" />
+                <element signature="e#2997#3015#0" expanded="true" />
+                <element signature="e#2994#3013#0" expanded="true" />
+                <element signature="e#3136#3154#0" expanded="true" />
+                <element signature="e#1932#1950#0" expanded="true" />
+                <element signature="e#3372#3390#0" expanded="true" />
+                <element signature="e#3244#3266#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="38" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="38" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="70" column="9" lean-forward="true" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="32" column="30" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -120,47 +201,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="22" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="22" />
+            <state relative-caret-position="44">
+              <caret line="11" column="49" lean-forward="true" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-        <option value="layoutResourceFile_vertical" />
-      </list>
-    </option>
-  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>imageView</find>
+      <find>startac</find>
       <find>start</find>
-      <find>login</find>
       <find>allbackground</find>
       <find>navigationBackground</find>
-      <find>lineColor</find>
-      <find>slide_back</find>
-      <find>initda</find>
-      <find>MZBannerView</find>
-      <find>#EBCD91</find>
-      <find>onres</find>
-      <find>tv_get_verfy_code</find>
-      <find>#9E9E9E</find>
-      <find>smartrefreshLayout</find>
-      <find>#2B2B2B</find>
-      <find>3232</find>
-      <find>#534F49</find>
-      <find>startac</find>
-      <find>Loadingd</find>
-      <find>EditText</find>
-      <find>INTERNET</find>
-      <find>clickLogin2</find>
-      <find>tverrortips</find>
+      <find>login</find>
+      <find>register</find>
+      <find>Loadingda</find>
+      <find>user</find>
+      <find>userinfo</find>
+      <find>stopLocation</find>
+      <find>startGps</find>
+      <find>mMZModePadding</find>
+      <find>com.youth.banner</find>
+      <find>banner</find>
+      <find>navigationBar</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -171,53 +237,32 @@
       <list>
         <option value="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/utils/ui/BarUtils.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/activity/StartAty.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/fragment/ShoppingCarFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/fragment/SortFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/fragment/WalletFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/fragment/MineFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/bg_home_yue.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/factory/FragmentFactory.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/fragment/HomeFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/drawer_header.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/activity/home/UserInfoAty.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/normal_title.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_userinfo.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/net/RetrofitUtils.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/net/RequestSerives.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/net/RequestData.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/activity/login/ForgetAty.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/activity/login/RegisterAty.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_system_setting.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/activity/home/WebViewAty.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/activity/home/SystemSettingAty.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_webview.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/activity/home/WebviewAty.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/fragment/TouziFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/bg_edit_touzi.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_touzi.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_forget.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/activity/home/KefuAty.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_forget.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/activity/login/LoginAty.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/fragment/C2cFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/adapter/MyPagerAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/adapter/C2cPagerAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/net/request/RegisterRequest.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/net/RequestData.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/activity/login/RegisterAty.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/net/RequestSerives.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/banner_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/view/RoundedCornersTransform.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_c2c.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/fragment/HomeFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_touzi.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="78" />
-    <option name="y" value="12" />
-    <option name="width" value="1805" />
-    <option name="height" value="977" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="829" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -227,7 +272,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -251,13 +296,6 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="newcoin" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="adapter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="coin" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="newcoin" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="fragment" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -270,19 +308,34 @@
             <path>
               <item name="coin" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="newcoin" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="net" type="462c0819:PsiDirectoryNode" />
+              <item name="request" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coin" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="newcoin" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coin" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
             </path>
             <path>
               <item name="coin" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="drawable" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
             <path>
               <item name="coin" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="xml" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
             <path>
               <item name="coin" type="1abcf292:AndroidViewProjectNode" />
@@ -293,28 +346,24 @@
         </subPane>
       </pane>
       <pane id="ProjectPane" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="emulator-5554" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2019-10-21T07:51:12.473Z" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../palao" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
-    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/activity/home/WebViewAty.java" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.yijiu.newcoin.adapter" />
-      <recent name="com.yijiu.newcoin.activity.home" />
+      <recent name="com.yijiu.newcoin.view" />
+      <recent name="com.yijiu.newcoin.net.request" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\work\android\coin\app\src\main\res\drawable" />
-      <recent name="D:\work\android\coin\app\src\main\res\layout" />
-      <recent name="D:\work\android\coin\app\src\main\res\mipmap-xhdpi" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi" />
+      <recent name="$PROJECT_DIR$/app/src/main/res" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -402,29 +451,22 @@
       <option name="presentableId" value="Default" />
       <updated>1571386813989</updated>
     </task>
-    <task id="LOCAL-00001" summary="UI部分实现">
-      <created>1571471751535</created>
+    <task id="LOCAL-00001" summary="登录注册页面以及网络请求">
+      <created>1571712047248</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1571471751535</updated>
+      <updated>1571712047248</updated>
     </task>
-    <task id="LOCAL-00002" summary="UI部分实现1">
-      <created>1571480085884</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1571480085884</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="829" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.17328326" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.23676682" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -432,28 +474,26 @@
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Run" order="0" weight="0.3295063" />
-      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49946353" weight="0.33869115" />
+      <window_info anchor="bottom" id="Run" order="0" />
+      <window_info anchor="bottom" id="Logcat" order="1" visible="true" weight="0.26750702" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" />
       <window_info anchor="bottom" id="Terminal" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5005365" side_tool="true" weight="0.33869115" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.2422503" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32913166" />
       <window_info anchor="bottom" id="Android Profiler" order="8" />
-      <window_info anchor="bottom" id="Find" order="9" weight="0.3295063" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Gradle" order="2" weight="0.3299356" />
+      <window_info anchor="right" id="Gradle" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info active="true" anchor="right" id="Preview" order="4" visible="true" weight="0.32939914" />
+      <window_info active="true" anchor="right" id="Preview" order="4" visible="true" weight="0.3297568" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="UI部分实现" />
-    <MESSAGE value="UI部分实现1" />
-    <option name="LAST_COMMIT_MESSAGE" value="UI部分实现1" />
+    <MESSAGE value="登录注册页面以及网络请求" />
+    <option name="LAST_COMMIT_MESSAGE" value="登录注册页面以及网络请求" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/utils/UIUtils.java">
@@ -470,409 +510,229 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/327b080950085e0d4218e9c5e3182c18/jetified-zxing-library-2.2/res/values/values.xml" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.forvv231/EasyNavigation/1.0.3/9091fef40c15571b5ef11b03cfd8cfecf0435d80/EasyNavigation-1.0.3-sources.jar!/com/next/easynavigation/view/EasyNavigationBar.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/activity/login/ForgetAty.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="324" column="45" selection-start-line="324" selection-start-column="36" selection-end-line="324" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/fragment/AppFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/fragment/WalletFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/activity/StartAty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="36" column="83" lean-forward="true" selection-start-line="36" selection-start-column="83" selection-end-line="36" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="72" column="58" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/banner_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="333" column="69" lean-forward="true" selection-start-line="322" selection-start-column="6" selection-end-line="333" selection-end-column="69" />
-          <folding>
-            <element signature="e#773#791#0" expanded="true" />
-            <element signature="e#14334#14356#0" expanded="true" />
-            <element signature="e#14460#14477#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="31" column="30" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="30" />
+        <state relative-caret-position="405">
+          <caret line="48" column="70" selection-start-line="48" selection-start-column="70" selection-end-line="48" selection-end-column="70" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_forget.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-          <folding>
-            <element signature="e#573#591#0" expanded="true" />
-            <element signature="e#773#791#0" expanded="true" />
-            <element signature="e#10324#10346#0" expanded="true" />
-            <element signature="e#10457#10474#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="124">
+          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-29/com/android/internal/telephony/ims/MmTelFeatureCompatAdapter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/activity/StartAty.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#22094#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="326">
+          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="37" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/factory/FragmentFactory.java">
+    <entry file="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/327b080950085e0d4218e9c5e3182c18/jetified-zxing-library-2.2/res/values/values.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="42" column="37" lean-forward="true" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+        <state relative-caret-position="-75">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.forvv231/EasyNavigation/1.0.3/9091fef40c15571b5ef11b03cfd8cfecf0435d80/EasyNavigation-1.0.3-sources.jar!/com/next/easynavigation/view/EasyNavigationBar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="94" column="63" selection-start-line="94" selection-start-column="45" selection-end-line="94" selection-end-column="63" />
-          <folding>
-            <element signature="e#2474#2492#0" expanded="true" />
-            <element signature="e#2535#2553#0" expanded="true" />
-            <element signature="e#2597#2615#0" expanded="true" />
-            <element signature="e#2945#2963#0" expanded="true" />
-            <element signature="e#3010#3028#0" expanded="true" />
-            <element signature="e#3330#3348#0" expanded="true" />
-            <element signature="e#3395#3413#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/fragment/HomeFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="64" column="38" lean-forward="true" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="30" column="38" lean-forward="true" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/drawer_header.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="78" column="39" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="39" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/net/NetUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="88" column="30" selection-start-line="88" selection-start-column="30" selection-end-line="88" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/net/request/LoginRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-          <folding>
-            <element signature="e#1066#1067#0" expanded="true" />
-            <element signature="e#1134#1135#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/net/RequestSerives.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/net/RetrofitUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/activity/login/ForgetAty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="203" column="73" selection-start-line="203" selection-start-column="73" selection-end-line="203" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/activity/login/RegisterAty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="210" column="88" lean-forward="true" selection-start-line="210" selection-start-column="88" selection-end-line="210" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/net/RequestData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/net/BaseBeanRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/activity/home/UserInfoAty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#969#1111#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_userinfo.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="74" column="59" lean-forward="true" selection-start-line="74" selection-start-column="59" selection-end-line="74" selection-end-column="59" />
-          <folding>
-            <element signature="e#3213#3230#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/network_security_config.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_webview.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="34" />
-          <folding>
-            <element signature="e#399#417#0" expanded="true" />
-            <element signature="e#452#470#0" expanded="true" />
-            <element signature="e#553#571#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_system_setting.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1729">
-          <caret line="91" column="36" selection-start-line="91" selection-start-column="29" selection-end-line="91" selection-end-column="36" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/activity/home/SystemSettingAty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="47" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/activity/home/WebviewAty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#1182#1470#0" expanded="true" />
-            <element signature="e#1469#1470#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bg_get_verfycode.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bg_home_yue.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="49" lean-forward="true" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
-          <folding>
-            <element signature="e#253#271#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bg_edit_touzi.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="48" lean-forward="true" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
-          <folding>
-            <element signature="e#260#277#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/fragment/TouziFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="778">
-          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7607877b3bc18c18f39757b7331750b9/jetified-zxing-library-2.2/res/values/values.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="64" column="45" lean-forward="true" selection-start-line="64" selection-start-column="45" selection-end-line="64" selection-end-column="45" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/activity/home/KefuAty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="57" column="42" lean-forward="true" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
+        <state relative-caret-position="69">
+          <caret line="205" column="110" selection-start-line="205" selection-start-column="67" selection-end-line="205" selection-end-column="110" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="153" column="42" selection-start-line="153" selection-start-column="29" selection-end-line="153" selection-end-column="42" />
+        <state relative-caret-position="285">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/activity/login/LoginAty.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="100" column="52" lean-forward="true" selection-start-line="100" selection-start-column="52" selection-end-line="100" selection-end-column="52" />
+        <state relative-caret-position="138">
+          <caret line="218" column="32" selection-start-line="218" selection-start-column="32" selection-end-line="218" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_touzi.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="130" column="47" lean-forward="true" selection-start-line="130" selection-start-column="47" selection-end-line="130" selection-end-column="47" />
+        <state relative-caret-position="150">
+          <caret line="221" column="34" selection-start-line="221" selection-start-column="29" selection-end-line="221" selection-end-column="34" />
           <folding>
-            <element signature="e#5211#5229#0" expanded="true" />
-            <element signature="e#5277#5295#0" expanded="true" />
-            <element signature="e#5342#5360#0" expanded="true" />
-            <element signature="e#5614#5632#0" expanded="true" />
-            <element signature="e#5783#5801#0" expanded="true" />
+            <element signature="e#773#791#0" expanded="true" />
           </folding>
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/net/RequestData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="30" column="30" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/activity/login/RegisterAty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="217" selection-start-line="217" selection-end-line="217" />
+          <folding>
+            <element signature="e#5883#5927#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/net/RequestSerives.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="26" column="71" selection-start-line="26" selection-start-column="71" selection-end-line="26" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/net/request/RegisterRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="22" />
+        <state relative-caret-position="44">
+          <caret line="11" column="49" lean-forward="true" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/normal_title.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="31" lean-forward="true" selection-start-line="5" selection-end-line="19" selection-end-column="21" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="177" column="70" selection-start-line="177" selection-start-column="60" selection-end-line="177" selection-end-column="70" />
-          <folding>
-            <element signature="e#5994#6139#0" expanded="true" />
-            <element signature="e#6138#6139#0" expanded="true" />
-            <element signature="e#6420#6565#0" expanded="true" />
-            <element signature="e#6564#6565#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="300">
+          <caret line="32" column="30" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/fragment/C2cFragment.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/194289a76aab87acedd961782c301c67/jetified-MZBannerView-v2.0.2/jars/classes.jar!/com/zhouwei/mzbanner/MZBannerView.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="286">
+          <caret line="245" column="63" selection-start-line="245" selection-start-column="51" selection-end-line="245" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/adapter/C2cPagerAdapter.java">
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="125">
+          <caret line="70" column="9" lean-forward="true" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.youth.banner/banner/1.4.10/eae835ac9b7ca690031f2b42fbcc88edab66ce5f/banner-1.4.10-sources.jar!/com/youth/banner/Banner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="234" column="18" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/view/RoundedCornersTransform.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_c2c.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="49" column="48" lean-forward="true" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
+        <state relative-caret-position="765">
+          <caret line="51" column="16" lean-forward="true" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/fragment/C2cFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="35" column="68" lean-forward="true" selection-start-line="35" selection-start-column="68" selection-end-line="35" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/fragment/HomeFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="198" column="26" lean-forward="true" selection-start-line="198" selection-start-column="26" selection-end-line="198" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/banner_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="38" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/fragment/TouziFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-113">
+          <caret line="36" column="25" lean-forward="true" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yijiu/newcoin/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="41" column="44" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="38" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="38" />
           <folding>
-            <element signature="e#401#419#0" expanded="true" />
-            <element signature="e#689#707#0" expanded="true" />
-            <element signature="e#746#764#0" expanded="true" />
-            <element signature="e#806#824#0" expanded="true" />
-            <element signature="e#944#962#0" expanded="true" />
-            <element signature="e#1005#1023#0" expanded="true" />
-            <element signature="e#1362#1380#0" expanded="true" />
+            <element signature="e#778#796#0" expanded="true" />
+            <element signature="e#912#930#0" expanded="true" />
+            <element signature="e#976#994#0" expanded="true" />
+            <element signature="e#1041#1059#0" expanded="true" />
+            <element signature="e#1168#1185#0" expanded="true" />
+            <element signature="e#1368#1386#0" expanded="true" />
+            <element signature="e#1600#1618#0" expanded="true" />
+            <element signature="e#3060#3077#0" expanded="true" />
+            <element signature="e#3126#3144#0" expanded="true" />
+            <element signature="e#3191#3209#0" expanded="true" />
+            <element signature="e#3257#3275#0" expanded="true" />
+            <element signature="e#3113#3132#0" expanded="true" />
+            <element signature="e#2997#3015#0" expanded="true" />
+            <element signature="e#2994#3013#0" expanded="true" />
+            <element signature="e#3136#3154#0" expanded="true" />
+            <element signature="e#1932#1950#0" expanded="true" />
+            <element signature="e#3372#3390#0" expanded="true" />
+            <element signature="e#3244#3266#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_touzi.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding>
+            <element signature="e#884#902#0" expanded="true" />
+            <element signature="e#1474#1492#0" expanded="true" />
+            <element signature="e#1705#1723#0" expanded="true" />
           </folding>
         </state>
       </provider>

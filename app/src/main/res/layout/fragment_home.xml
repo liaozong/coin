@@ -9,19 +9,34 @@
                 type="String"/>
     </data>
     <LinearLayout android:layout_width="match_parent"
-                  android:layout_marginTop="@dimen/dpDimen30"
                   android:layout_height="match_parent"
                   android:orientation="vertical"
     >
         <LinearLayout
                       android:layout_width="match_parent" android:orientation="vertical"
                       android:layout_height="match_parent">
-            <ImageView
-                android:id="@+id/iv_left"
-                android:layout_width="wrap_content"
-                android:layout_marginTop="@dimen/dpDimen35"
-                android:src="@mipmap/reset_btn"
-                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@mipmap/title_bg"
+                android:layout_height="@dimen/dpDimen80">
+                <ImageView
+                    android:id="@+id/iv_left"
+                    android:layout_width="@dimen/dpDimen45"
+                    android:layout_marginTop="@dimen/dpDimen45"
+                    android:layout_marginLeft="@dimen/dpDimen17"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dpDimen8"
+                    android:src="@mipmap/userinfopic"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_width="@dimen/dpDimen90"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@mipmap/titlepic"
+                    android:layout_height="@dimen/dpDimen50"/>
+            </RelativeLayout>
+
 
        <!--     <include
                     app:string="@{title}"
@@ -31,30 +46,57 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
             />-->
-            <com.zhouwei.mzbanner.MZBannerView
-                android:id="@+id/banner"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/dpDimen140"
-                app:canLoop="true"
-                app:indicatorAlign="center"
-                app:indicatorPaddingLeft="10dp"
-                app:open_mz_mode="true" />
             <RelativeLayout
                 android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="wrap_content">
+             <!--   <com.zhouwei.mzbanner.MZBannerView
+                    android:id="@+id/banner"
+                    android:layout_marginTop="@dimen/dpDimen8"
+                    android:layout_marginBottom="@dimen/dpDimen13"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dpDimen160"
+                    app:indicatorPaddingLeft="-6dp"
+                    app:indicatorPaddingRight="-6dp"
+                    app:canLoop="true"
+                    app:indicatorAlign="center"
+                    app:open_mz_mode="false" />-->
+
+                <com.youth.banner.Banner
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/banner"
+                    android:layout_marginTop="@dimen/dpDimen8"
+                    android:layout_marginBottom="@dimen/dpDimen13"
+                    android:layout_marginLeft="@dimen/dpDimen16"
+                    android:layout_marginRight="@dimen/dpDimen16"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dpDimen160" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
                 android:layout_marginTop="@dimen/dpDimen10"
+                android:layout_height="@dimen/dpDimen150">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dpDimen13"
                 android:layout_marginLeft="@dimen/dpDimen10"
                 android:layout_marginRight="@dimen/dpDimen10"
-                android:background="@drawable/bg_home_yue"
-                android:layout_height="86dp">
-               <ImageView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:layout_centerInParent="true"
-                   android:src="@mipmap/reset_btn"
-                   />
+                android:background="@mipmap/qiandaopic"
+                android:layout_height="@dimen/dpDimen96">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/youxiqiandao"
+                    android:layout_centerInParent="true"
+                    android:textColor="#fff7dbaa"
+                    android:textSize="20sp"
+                    />
 
             </RelativeLayout>
-            <RelativeLayout
+            </RelativeLayout>
+            <!--<RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_marginTop="@dimen/dpDimen10"
                 android:layout_marginLeft="@dimen/dpDimen10"
@@ -79,7 +121,7 @@
                     android:textColor="#ffe8d2b0"
                     android:textSize="12sp"
                     />
-            </RelativeLayout>
+            </RelativeLayout>-->
                <!-- <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
                     android:id="@+id/smart_refreshLayout"
                     android:layout_width="match_parent"

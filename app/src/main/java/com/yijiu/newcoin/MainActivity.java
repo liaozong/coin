@@ -110,8 +110,8 @@ public class MainActivity extends BaseAty {
                 .fragmentList(fragments)
                 .anim(Anim.ZoomIn)//点击tab动画
                 .navigationHeight(61)  //导航栏高度
-                .iconSize(20)     //Tab图标大小
-                .tabTextSize(10)   //Tab文字大小
+                .iconSize(45)     //Tab图标大小
+                .tabTextSize(0)   //Tab文字大小
                 .tabTextTop(2)     //Tab文字距Tab图标的距离
                 .normalTextColor(Color.parseColor("#9E9E9E"))   //Tab未选中时字体颜色
                 .selectTextColor(Color.parseColor("#F0DA91"))   //Tab选中时字体颜色

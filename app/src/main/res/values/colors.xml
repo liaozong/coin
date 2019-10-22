@@ -10,6 +10,7 @@
     <color name="littleblack">#666666</color><!--淡黑色-->
 
     <color name="danhui">#c2c2c2</color><!--灰色-->
+    <color name="e6">#eeeeee</color><!--灰色-->
     <color name="qingdanhui">#9BA1C1</color><!--轻灰色-->
     <color name="qinghuiback">#F0F0F0</color><!--轻灰背景-->
     <color name="bantouming">#e0000000</color><!--半透明色-->

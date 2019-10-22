@@ -5,21 +5,20 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/e6"
     tools:context=".MainActivity">
     <androidx.drawerlayout.widget.DrawerLayout
         android:id="@+id/drawer_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/cela_bg"
         tools:openDrawer="start">
     <com.next.easynavigation.view.EasyNavigationBar
         android:id="@+id/navigationBar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
-        android:background="@color/allbackground"
         app:Easy_lineHeight="0dp"
-        app:Easy_navigationBackground="@color/qianse_bg"
+        app:Easy_navigationBackground="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
